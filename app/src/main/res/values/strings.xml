@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">EasyBake</string>
+    <string name="title_activity_two_pane_details">TwoPaneDetailsActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="ingred_label">Ingredients</string>
+    <string name="steps_title_bar">Steps</string>
+    <string name="title_activity_recipe_step">RecipeStepActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="placeholder_description">video not available</string>
+    <string name="appwidget_text">EasyBake Widget</string>
+    <string name="configure">Select a recipe for your widget</string>
+    <string name="add_widget">Add widget</string>
+    <string name="cupcake_icon">cupcake icon</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="widget_error_no_ingredients">Ingredients currently unavailable</string>
+</resources>

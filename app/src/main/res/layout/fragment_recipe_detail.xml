@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".fragments.RecipeDetailFragment">
+
+
+
+<TextView
+    android:id="@+id/tvStepsHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:paddingBottom="@dimen/padding_medium"
+    android:paddingTop="@dimen/padding_medium"
+    android:textColor="@color/colorWhite"
+    android:textSize="@dimen/detail_title_bar"
+    app:layout_constraintDimensionRatio="w,1:1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="Ingredients" />
+
+
+<ImageView
+    android:id="@+id/no_video_placeholder"
+    android:contentDescription="@string/placeholder_description"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:visibility="visible"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvStepsHeader" />
+
+<com.google.android.exoplayer2.ui.PlayerView
+    android:id="@+id/video_view"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:visibility="visible"
+    android:layout_marginTop="@dimen/padding_medium"
+    android:layout_marginLeft="@dimen/padding_medium"
+    android:layout_marginRight="@dimen/padding_medium"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/no_video_placeholder"
+    app:fastforward_increment="1000"
+    app:rewind_increment="1000"/>
+
+<TextView
+    android:id="@+id/tvStepDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/padding_large"
+    android:layout_marginLeft="@dimen/padding_medium"
+    android:layout_marginRight="@dimen/padding_medium"
+    android:textSize="@dimen/detail_title_bar"
+    android:paddingStart="@dimen/padding_small"
+    android:paddingEnd="@dimen/padding_small"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/video_view"
+    tools:text="This is a simple introduction on how to make a pie." />
+
+
+</android.support.constraint.ConstraintLayout>
